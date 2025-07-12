@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    padding: 40px;
+    padding: 20px 12px; /* atas-bawah 20px, kiri-kanan 12px */
     background-color: #f4f4f4;
     background-image: url('iris_background.webp');
     background-repeat: no-repeat;
@@ -17,24 +17,18 @@ h4 {
 }
 
 .boxOfInput {
-    position: relative;
-    width: 100%;
-    max-width: 480px;
-    display: flex;
-    /* Atur layout flex untuk menggunakan align-content */
-    flex-direction: column;
-    /* Supaya elemen vertical */
-    align-items: center;
-    /* Pusatkan isi horizontal */
-    background-color: white;
-    /* Warna latar belakang */
-    padding: 10px;
-    /* Beri jarak dalam box */
-    /* Pusatkan box secara horizontal */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
-    z-index: 1000;
+  position: relative;
+  max-width: 480px;     /* tapi dibatasi di desktop */
+  padding: 20px;    /* pusatkan horizontal */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  z-index: 1000;
 }
 
 .form-group {
