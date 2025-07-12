@@ -19,7 +19,7 @@ h4 {
 .boxOfInput {
   position: relative;
   max-width: 480px;     /* tapi dibatasi di desktop */
-  padding: 20px;    /* pusatkan horizontal */
+  padding: 30px;    /* pusatkan horizontal */
   display: flex;
   margin: auto;
   flex-direction: column;
