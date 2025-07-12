@@ -9,20 +9,22 @@
 
 <body>
 
-  <h1>Muhammad Alfin</h1> <br>
-  <h2>Prediksi Kelas Menggunakan Model Machine Learning, Pakai satuan cm ya!</h2>
+  <div class="boxOfInput">
 
-  <div class="form-group">
-    <input type="number" step="any" id="f1" placeholder="Sepal Length">
-    <input type="number" step="any" id="f2" placeholder="Sepal Width">
-    <input type="number" step="any" id="f3" placeholder="Petal Length">
-    <input type="number" step="any" id="f4" placeholder="Petal Width">
+    <h1>Muhammad Alfin</h1>
+    <h4>Prediksi Kelas Menggunakan Model Machine Learning, Pakai satuan cm ya!</h4>
+
+    <div class="form-group">
+      <input type="number" step="any" id="f1" placeholder="Sepal Length"><br><br>
+      <input type="number" step="any" id="f2" placeholder="Sepal Width"><br><br>
+      <input type="number" step="any" id="f3" placeholder="Petal Length"><br><br>
+      <input type="number" step="any" id="f4" placeholder="Petal Width"><br><br>
+    </div>
+
+    <button id="predictBtn" onclick="submitPrediction()">Kirim & Prediksi</button>
+    <div id="result"></div>
+    <div id="imageRes"></div>
   </div>
-
-  <button onclick="submitPrediction()">Kirim & Prediksi</button>
-
-  <div id="result"></div>
-
   <script src="iris.js"></script>
 
 </body>

@@ -2,10 +2,28 @@ body {
     font-family: Arial, sans-serif;
     padding: 40px;
     background-color: #f4f4f4;
+    background-image: url('iris_background.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* atau contain, tergantung tujuan */
+    min-height: 100vh; /* pastikan body setinggi viewport */
 }
 
-h2 {
+h4 {
     color: #333;
+    text-align: center;
+}
+
+.boxOfInput {
+    display: flex;                 /* Atur layout flex untuk menggunakan align-content */
+    flex-direction: column;       /* Supaya elemen vertical */
+    align-items: center;          /* Pusatkan isi horizontal */
+    background-color: white;      /* Warna latar belakang */
+    width: 300px;                 /* Gunakan unit yang valid seperti px, %, em */
+    padding: 20px;                /* Beri jarak dalam box */
+    margin: 0 auto;               /* Pusatkan box secara horizontal */
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 .form-group {
