@@ -18,7 +18,7 @@ h4 {
 
 .boxOfInput {
     position: relative;
-    width: 75%;
+    width: 100%;
     max-width: 480px;
     display: flex;
     /* Atur layout flex untuk menggunakan align-content */
@@ -28,8 +28,6 @@ h4 {
     /* Pusatkan isi horizontal */
     background-color: white;
     /* Warna latar belakang */
-    width: 300px;
-    /* Gunakan unit yang valid seperti px, %, em */
     padding: 10px;
     /* Beri jarak dalam box */
     /* Pusatkan box secara horizontal */
