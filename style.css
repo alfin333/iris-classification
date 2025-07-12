@@ -5,8 +5,10 @@ body {
     background-image: url('iris_background.webp');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; /* atau contain, tergantung tujuan */
-    min-height: 100vh; /* pastikan body setinggi viewport */
+    background-size: cover;
+    /* atau contain, tergantung tujuan */
+    min-height: 100vh;
+    /* pastikan body setinggi viewport */
 }
 
 h4 {
@@ -15,15 +17,27 @@ h4 {
 }
 
 .boxOfInput {
-    display: flex;                 /* Atur layout flex untuk menggunakan align-content */
-    flex-direction: column;       /* Supaya elemen vertical */
-    align-items: center;          /* Pusatkan isi horizontal */
-    background-color: white;      /* Warna latar belakang */
-    width: 300px;                 /* Gunakan unit yang valid seperti px, %, em */
-    padding: 20px;                /* Beri jarak dalam box */
-    margin: 0 auto;               /* Pusatkan box secara horizontal */
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    /* Atur layout flex untuk menggunakan align-content */
+    flex-direction: column;
+    /* Supaya elemen vertical */
+    align-items: center;
+    /* Pusatkan isi horizontal */
+    background-color: white;
+    /* Warna latar belakang */
+    width: 300px;
+    /* Gunakan unit yang valid seperti px, %, em */
+    padding: 20px;
+    /* Beri jarak dalam box */
+    margin: 0 auto;
+    /* Pusatkan box secara horizontal */
     border: 1px solid #ccc;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    z-index: 1000;
 }
 
 .form-group {
@@ -53,3 +67,31 @@ button:hover {
     font-size: 18px;
     color: green;
 }
+
+/* --- Partikel Jatuh (man‑face) ------------------- */
+.particle {
+    position: fixed;
+    top: -50px;
+    /* mulai di atas layar */
+    pointer-events: none;
+    /* tidak mengganggu klik */
+    background-image: url('man-face.jpg');
+    /* ganti path sesuai file */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 0;
+    /* durasi dan delay akan di‑set lewat style JS */
+}
+
+/* Gerakan turun */
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0.7;
+    }
+}
+

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prediksi Model AI. Punya Muhammad Alfin</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -25,8 +25,30 @@
     <div id="result"></div>
     <div id="imageRes"></div>
   </div>
+
+  <!-- JS utama -->
   <script src="iris.js"></script>
 
+  <!-- Inline script khusus partikel -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const N = 25;
+      for (let i = 0; i < N; i++) {
+        const p = document.createElement("div");
+        p.className = "particle";
+
+        const size = 20 + Math.random() * 20;
+        p.style.width = p.style.height = size + "px";
+        p.style.left = Math.random() * 100 + "vw";
+
+        const fallDur = 5 + Math.random() * 5;
+        p.style.animationDuration = `${fallDur}s, ${fallDur * 0.8}s`;
+        p.style.animationDelay = `${-Math.random() * 10}s`;
+
+        document.body.appendChild(p);
+      }
+    });
+  </script>
 </body>
 
 </html>
